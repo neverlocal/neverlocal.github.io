@@ -1,0 +1,147 @@
+:root {
+  --main-bg-color: #FEFFF4
+  --text-color: black;
+  --nav-bg-color: transparent;
+  --nav-link-color: black;
+  --mobile-menu-bg-color: rgba(0, 0, 0, 0.9);
+  --mobile-menu-link-color: #FEFFF4;
+}
+
+body {
+  font-family: Cinzel;
+  background-color: var(--main-bg-color);
+  color: var(--text-color);
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-size:1em (16px);
+  line-height:1.375em;
+}
+
+h1 {
+  font-weight: 600;
+  font-size:3em (48px);
+  line-height:1.05em;
+}
+
+h2 {
+  text-align: right;
+  font-weight: 500;
+  font-size:2.25em (36px);
+  line-height:1.25em;
+}
+
+h3 {
+    text-align: right;
+    font-weight: 500;
+    font-size:1.75em (28px);
+    line-height:1.25em;
+  }
+
+nav {
+  background-color: var(--nav-bg-color);
+  padding: 10px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+.mainContainer {
+    display: grid;
+    width: 70%;
+    justify-content: center;
+}
+
+.menu {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.menu a {
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--nav-link-color);
+  padding: 10px;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger span {
+  height: 2px;
+  width: 25px;
+  background-color: var(--nav-link-color);
+  margin-bottom: 5px;
+  margin-left: 5px;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+
+@media (max-width: 768px) {
+    body {
+        line-height:1.25em;
+      }
+      
+      h1 {
+        font-size: 4vw;
+      }
+      
+      h2 {
+        font-size: 3vw;
+      }
+      
+      h3 {
+          font-size:1.375em (22px);
+          line-height:1.13em;
+    }
+
+    .wrapper {
+        display: flex;
+        width: fit-content;
+    }
+
+    .hamburger {
+        display: flex;
+        position: inherit;
+    }
+
+    .menu {
+        display: none;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: var(--mobile-menu-bg-color);
+        justify-content: center;
+        align-items: center;
+    }
+
+    .menu a {
+        color: var(--mobile-menu-link-color);
+        text-align: center;
+        font-size: 5vw;
+        margin: 10px 0;
+        z-index: 15;
+    }
+
+    #menu-toggle:checked ~ .wrapper { 
+        width: 100%;
+        height: 100%;
+        .menu {
+            display: flex;
+        }
+    }
+
+}
