@@ -1,11 +1,11 @@
 :root {
-  --main-bg-color: #FEFFF4;
-  --text-color: black;
+  --main-bg-color: #FEFFF9;
+  --text-color: rgba(45, 45, 51, 1);
   --text-highlight-color: #9712A1;
   --nav-bg-color: transparent;
   --nav-link-color: black;
-  --mobile-menu-bg-color: rgba(0, 0, 0, 0.9);
-  --mobile-menu-link-color: #FEFFF4;
+  --mobile-menu-bg-color: rgba(45, 45, 51, 0.9);
+  --mobile-menu-link-color: #FEFFF9;
 }
 
 /* cinzel-regular - latin */
