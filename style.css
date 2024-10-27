@@ -1,10 +1,38 @@
 :root {
   --main-bg-color: #FEFFF4
   --text-color: black;
+  --text-highlight-color: #9712A1;
   --nav-bg-color: transparent;
   --nav-link-color: black;
   --mobile-menu-bg-color: rgba(0, 0, 0, 0.9);
   --mobile-menu-link-color: #FEFFF4;
+}
+
+/* cinzel-regular - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Cinzel';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./fonts/cinzel-v23-latin-regular.woff2') format('woff2');
+}
+
+/* cinzel-500 - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Cinzel';
+  font-style: normal;
+  font-weight: 500;
+  src: url('./fonts/cinzel-v23-latin-500.woff2') format('woff2');
+}
+
+/* cinzel-600 - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Cinzel';
+  font-style: normal;
+  font-weight: 600;
+  src: url('./fonts/cinzel-v23-latin-600.woff2') format('woff2');
 }
 
 body {
@@ -32,6 +60,7 @@ h2 {
   font-weight: 500;
   font-size:2.25em (36px);
   line-height:1.25em;
+  color: var(--text-highlight-color);
 }
 
 h3 {
@@ -93,11 +122,11 @@ nav {
       }
       
       h1 {
-        font-size: 4vw;
+        font-size: 6vw;
       }
       
       h2 {
-        font-size: 3vw;
+        font-size: 5vw;
       }
       
       h3 {
