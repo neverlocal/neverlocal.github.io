@@ -1,6 +1,6 @@
 :root {
   --main-bg-color: #FEFFF4;
-  --text-color: rgba(46, 46, 46, 0.9);
+  --text-color: rgba(46, 46, 46, 1);
   --text-highlight-color: #7e2e84;
   --nav-bg-color: transparent;
   --nav-link-color: black;
