@@ -1,0 +1,187 @@
+:root {
+  --main-bg-color: #FEFFF4;
+  --text-color: rgba(46, 46, 46, 1);
+  --text-highlight-color: #7E2E84;
+  --nav-bg-color: transparent;
+  --nav-link-color: black;
+  --mobile-menu-bg-color: rgba(46, 46, 46, 0.9);
+  --mobile-menu-link-color: #FEFFF4;
+}
+
+/* cinzel-regular - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Cinzel';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../webfonts/cinzel-v23-latin-regular.woff2') format('woff2');
+}
+
+/* cinzel-500 - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Cinzel';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../webfonts/cinzel-v23-latin-500.woff2') format('woff2');
+}
+
+/* cinzel-600 - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Cinzel';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../webfonts/cinzel-v23-latin-600.woff2') format('woff2');
+}
+
+body {
+  font-family: Cinzel;
+  background-color: var(--main-bg-color);
+  color: var(--text-color);
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-size: 16px;
+  line-height: 1.375em;
+  min-width: 320px;
+}
+
+h1 {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 1.05em;
+}
+
+h2 {
+  text-align: right;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 1.25em;
+  color: var(--text-highlight-color);
+}
+
+h3 {
+  text-align: right;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 1.25em;
+}
+
+nav {
+  background-color: var(--nav-bg-color);
+  padding: 10px;
+  position: fixed;
+  width: 70%;
+  top: 0;
+  user-select: none;
+}
+
+nav::after {
+  content: "";
+  display: block;
+  width: 100%;
+  border-bottom: 1px solid var(--text-color);
+  margin: 10px auto 0;
+}
+
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  width: 56%;
+  max-width: 600px;
+  align-items: center;
+  text-align: center;
+}
+
+@media (max-width: 480px) {
+  .mainContainer {
+    width: 70%;
+  }
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  /* justify-content: flex-end; */
+  align-items: center;
+  font-size: 20px;
+}
+
+.menu a {
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--nav-link-color);
+  padding: 10px 10px;
+}
+
+@media (min-width: 480px) {
+  .menu a {
+    padding: 10px 20px;
+  }
+}
+
+.noselect {
+  user-select: none;
+}
+
+.logo {
+  width: 100%;
+  height: auto;
+}
+
+
+
+.motto {
+  /* text-align: center; */
+  text-align: right;
+  display: block;
+  width: 100%;
+  font-size: 36px;
+}
+
+@media (max-width: 768px) {
+  .motto {
+    font-size: 30px;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .motto {
+    font-size: 24px;
+  }
+}
+
+footer::before {
+  content: "";
+  display: block;
+  width: 70%;
+  border-top: 1px solid var(--text-color);
+  margin: 0 auto;
+  position: relative;
+  top: -20px;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: var(--main-bg-color);
+  padding: 10px 0;
+  text-align: center;
+}
+
+.social-links a {
+  margin: 0 10px;
+  color: var(--text-color);
+  font-size: 1.5em;
+  text-decoration: none;
+}
+
+.social-links a:hover {
+  color: var(--text-highlight-color);
+}
