@@ -13,12 +13,24 @@
   <nav>
     <label class="wrapper">
       <div class="menu">
+        <a href="https://neverlocal.com">Home</a>
         <a href="https://forum.neverlocal.com">Forum</a>
         <a href="https://blog.neverlocal.com">Blog</a>
-        <a href="https://careers.neverlocal.com">Careers</a>
+        <!-- <a href="https://careers.neverlocal.com">Careers</a> -->
+        <a href="#careersModal">Careers</a>
       </div>
     </label>
   </nav>
+
+  <div id="careersModal" class="modal">
+    <a href="#" class="modal-overlay"></a> <!-- Overlay to close modal on outside click -->
+    <div class="modal-content">
+      <a href="#" class="close">&times;</a>
+      <h2>Careers</h2>
+      <img src="logo.svg" class="modal-logo" alt="NeverLocal Logo">
+      <p>There are currently<br>no open positions.</p>
+    </div>
+  </div>
 
   <div class="mainContainer">
     <img src="logo-name.svg" class="logo" alt="NeverLocal Logo">

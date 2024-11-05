@@ -61,7 +61,6 @@ h2 {
   font-weight: 500;
   font-size: 36px;
   line-height: 1.25em;
-  color: var(--text-highlight-color);
 }
 
 h3 {
@@ -141,6 +140,7 @@ nav::after {
   display: block;
   width: 100%;
   font-size: 36px;
+  color: var(--text-highlight-color);
 }
 
 @media (max-width: 768px) {
@@ -185,3 +185,87 @@ footer {
 .social-links a:hover {
   color: var(--text-highlight-color);
 }
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+#careersModal:target {
+  display: flex;
+}
+
+.modal-content {
+  background-color: var(--main-bg-color);
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 300px;
+  width: 90%;
+  text-align: center;
+  position: relative;
+  font-size: 20px;
+}
+
+.modal-content h2 {
+  text-align: center;
+  margin-top: 0;
+}
+
+.modal-logo {
+  display: block;
+  margin: 20px auto;
+  width: 50%;
+  max-width: 150px;
+  height: auto;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 36px;
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+/* Overlay to close modal on outside click */
+.modal-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  display: block;
+  z-index: 1;
+}
+
+/* Position modal content above the overlay */
+.modal-content {
+  position: relative;
+  z-index: 2;
+}
+
+/* .modal:target {
+  display: flex;
+}
+
+.modal:target .modal-content {
+  pointer-events: auto;
+}
+
+.modal:target {
+  pointer-events: none;
+}
+
+.modal-content {
+  pointer-events: auto;
+} */
