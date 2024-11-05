@@ -236,7 +236,6 @@ footer {
   text-decoration: none;
 }
 
-/* Overlay to close modal on outside click */
 .modal-overlay {
   position: absolute;
   top: 0;
@@ -248,24 +247,7 @@ footer {
   z-index: 1;
 }
 
-/* Position modal content above the overlay */
 .modal-content {
   position: relative;
   z-index: 2;
 }
-
-/* .modal:target {
-  display: flex;
-}
-
-.modal:target .modal-content {
-  pointer-events: auto;
-}
-
-.modal:target {
-  pointer-events: none;
-}
-
-.modal-content {
-  pointer-events: auto;
-} */
